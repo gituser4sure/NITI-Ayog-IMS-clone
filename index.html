@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <div class="img1">
+          <img src="/NITI Ayog IMS clone/img/emblem.png" alt="emblem" />
+        </div>
+        <div>
+          <div class="head1">NITI Aayog</div>
+          <div class="head1a">
+            (National Institution for Transforming India)
+          </div>
+          <div class="head1b">Government of India</div>
+        </div>
+        <div>
+          <div class="head2">Internship Management System</div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <a href="">Home</a>
+        <a href="">Apply Online</a>
+        <a href="">Print Application</a>
+        <a href="">Instructions</a>
+        <a href="">Contact Us</a>
+      </div>
+      <div class="title2">
+        <p>Application form for Internship in NITI Aayog</p>
+      </div>
+      <div class="instructions">
+        <p>
+          Kindly read all the Instructions/Guidelines carefully before filling
+          in the form. <a href="">Click here for Instructions /Guidelines</a>
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="name">
+        <p>Name:</p>
+        <select name="title" id="title">
+          <option value="Mr.">Mr.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr.">Dr.</option>
+          <option value="Dr.(Ms.)">Dr.(Ms.)</option>
+          <option value="Prof.">Prof.</option>
+        </select>
+        <input placeholder="First Name" type="text" />
+        <input placeholder="Middle Name" type="text" />
+        <input placeholder="Last Name" type="text" />
+      </div>
+      <div class="f-name-dob">
+        <p>Father's Name:</p>
+        <input placeholder="Father Name" type="text" />
+        <p>Date of Birth (dd/mm/yyyy):</p>
+        <input type="date" />
+      </div>
+      <div class="address">
+        <p>Address</p>
+        <input placeholder="Address 1" type="text" />
+        <input placeholder="Address 2" type="text" />
+        <p>City</p>
+        <input placeholder="City" type="text" />
+        <p>Country</p>
+        <input placeholder="India" type="text" />
+        <p>Pin Code</p>
+        <input type="number" />
+      </div>
+      <div class="contact">
+        Contact Number:
+        <p>Phone(with Std code):</p>
+        <input type="number" />
+        <input type="number" />
+        <p>Mobile(+91):</p>
+        <input type="number" />
+      </div>
+      <div class="email">Email: <input type="email" /></div>
+      <h2>Educational Qualification (Starting fron 12th onwards)</h2>
+      <table>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Examination Passed</th>
+          <th>Discipline/Subject</th>
+          <th>Name of Board/University</th>
+          <th>Year of Joining <br>(month/year)</th>
+          <th>Year of Completion <br>(month/year)</th>
+          <th>Pursuing/Completed</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <select name="exam-pass" id="">
+              <option value="Senior Secondary">Senior Secondary</option>
+            </select>
+          </td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect-j">
+              <option value="Year">Year</option>
+            </select>
+
+            <script>
+              var select = document.getElementById("yearSelect-j");
+              for (var year = 1990; year <= 2024; year++) {
+                var option = document.createElement("option");
+
+                option.value = year;
+                option.text = year;
+
+                select.appendChild(option);
+              }
+            </script>
+          </td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect-c">
+              <option value="Year">Year</option>
+            </select>
+
+            <script>
+              var select = document.getElementById("yearSelect-c");
+              for (var year = 1990; year <= 2029; year++) {
+                var option = document.createElement("option");
+
+                option.value = year;
+                option.text = year;
+
+                select.appendChild(option);
+              }
+            </script>
+          </td>
+          <td>
+            <select name="pursuing" id="">
+              <option value="Completed">Completed</option>
+            </select>
+          </td>
+          <td><input type="number" placeholder="0" /></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <select name="exam-pass" id="">
+              <option value="-Select-">-Select-</option>
+              <option value="">B.A.</option>
+              <option value="">B.Arch</option>
+              <option value="">BBA</option>
+              <option value="">BCA</option>
+              <option value="">B.Com</option>
+              <option value="">BDS</option>
+              <option value="">BHM</option>
+              <option value="">B.Pharma</option>
+              <option value="">B.Sc.</option>
+              <option value="">B.Tech/B.E.</option>
+              <option value="">LLB</option>
+              <option value="">MBBS</option>
+              <option value="">Diploma</option>
+              <option value="">BVSC</option>
+              <option value="">Other</option>
+              <option value="">BHMS</option>
+              <option value="">BAMS</option>
+            </select>
+          </td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect">
+              <option value="Year">Year</option>
+            </select>
+
+            <script>
+              var select = document.getElementById("yearSelect");
+              for (var year = 1990; year <= 2024; year++) {
+                var option = document.createElement("option");
+
+                option.value = year;
+                option.text = year;
+
+                select.appendChild(option);
+              }
+            </script>
+          </td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect">
+              <option value="Year">Year</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </td>
+          <td>
+            <select name="pursuing" id="">
+              <option value="Select">Select</option>
+              <option value="Pursuing">Pursuing</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </td>
+          <td><input type="number" placeholder="0" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <select name="exam-pass" id="">
+              <option value="-Select-">-Select-</option>
+              <option value="">CA</option>
+              <option value="">CS</option>
+              <option value="">ICWA</option>
+              <option value="">Integrated PG</option>
+              <option value="">LLM</option>
+              <option value="">M.A</option>
+              <option value="">M.Arch</option>
+              <option value="">M.Com</option>
+              <option value="">M.Sc.</option>
+              <option value="">M.Tech/ME</option>
+              <option value="">MBA/PGDM</option>
+              <option value="">MCA</option>
+              <option value="">M.Ed</option>
+              <option value="">M.Pharma</option>
+              <option value="">PG Diploma</option>
+              <option value="">MVSC</option>
+              <option value="">Other</option>
+              <option value="">MCM</option>
+              <option value="">MS</option>
+            </select>
+          </td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="year" id="">
+              <option value="Year">Year</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="year" id="">
+              <option value="Year">Year</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </td>
+          <td>
+            <select name="pursuing" id="">
+              <option value="Select">Select</option>
+              <option value="Pursuing">Pursuing</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </td>
+          <td><input type="number" placeholder="0" /></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <select name="exam-pass" id="">
+              <option value="-Select-">-Select-</option>
+              <option value="">MPHIL</option>
+              <option value="">Phd/Doctrate</option>
+              <option value="">Other</option>
+            </select>
+          </td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect">
+              <option value="Year">Year</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </td>
+          <td>
+            <select name="month" id="">
+              <option value="Month">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option></select
+            ><select name="" id="yearSelect">
+              <option value="Year">Year</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </td>
+          <td>
+            <select name="pursuing" id="">
+              <option value="Select">Select</option>
+              <option value="Pursuing">Pursuing</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </td>
+          <td><input type="number" placeholder="0" /></td>
+        </tr>
+      </table>
+      <div class="month-for-internship">
+        Desired Month for Internship
+        <select name="i-month" id="">
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+          <option value="">10</option>
+          <option value="">11</option>
+        </select>
+        <select name="i-year" id="">
+          <option value="">2024</option>
+        </select>
+      </div>
+      <div class="aoi">
+        Area of Interest
+        <select name="aoi" id="">
+          <option value="">Agriculture</option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value="">Water Resources</option>
+        </select>
+      </div>
+      <div class="date">
+        Date: <input type="date" name="today" id="today" />
+      </div>
+      <div class="place">Place of submission <input type="text" /></div>
+      <div class="prw-btn">
+        <button class="p">Preview</button>
+      </div>
+      <div class="note">
+        Note: Click on Preview button to verify all details. On preview page
+        check all entered details . If all fields are correct, Submit button
+        will appear for final submission of form. Incase any correction is
+        needed, click on Edit button.
+      </div>
+      <div class="note2">
+        <p>
+          Application should be filled in the above proforma only; no other
+          format will be accepted.
+        </p>
+      </div>
+      <div class="note3">
+        <p>
+          *Indication of option does not reserve any right offering the same
+          sector. Allocation of the desired sector will be subject to
+          availability and at the discretion of NITI Aayog.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="NITI-add">
+        <p>NITI Aayog, Government of India, Sansad Marg, New Delhi-110001.</p>
+        <p>
+          Site designed and developed by National Informatics Centre, NITI Aayog
+          Unit (Best viewed in 1024x768 pixels)
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
